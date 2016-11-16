@@ -3,72 +3,62 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>David Kanwisher</title>
 </head>
 
 <body>
-    <header>
-        <h1>David Kanwisher</h1>
-        <nav>
-            <!--use border right in CSS to seperate these elements-->
-            <a href="index.html">About</a>
-            <a href="Portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
-    </header>
-    <div class="container">
-        <div class="about">
-            <h2>Portofolio</h2>
-            <hr>
-            <div class="project1">
-                <img src="#" alt="Project 1" height="200px" width="200px">
-                <!--position rel-->
-                <h2>Project 1</h2>
-                <!--position absolute-->
+    <div id="wrapper">
+        <header>
+            <h1>David Kanwisher</h1>
+            <nav>
+                <!--use border right in CSS to seperate these elements-->
+                <a href="index.html">About</a>
+                <a id="active" href="Portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+        <div id="content">
+            <div id="about">
+                <h2>Portfolio</h2>
+                <a href="#">
+                    <div class="projectpic"><img src="assets/images/hangman.png" height="200" width="265" alt="Project 1">
+                        <h3>Hangman</h3></div>
+                </a>
+                <a href="#">
+                    <div class="projectpic"><img src="assets/images/RPG.jpg" height="200" width="265" alt="Project 2">
+                        <h3>RPG Game</h3></div>
+                </a>
+                <a href="#">
+                    <div class="projectpic"><img src="assets/images/trivia.jpg" height="200" width="265" alt="Project 3">
+                        <h3>Trivia</h3></div>
+                </a>
+                <a href="#">
+                    <div class="projectpic">
+                        <img src="assets/images/widget.png" height="200" width="265" alt="Project 4">
+                            <h3>UNCC Info Widget</h3></div>
+                </a>
+                <a href="#">
+                    <div class="projectpic"><img src="assets/images/rockpaperscissors.png" height="200" width="265" alt="Project 5">
+                        <h3>Rock Paper Scissors</h3></div>
+                </a>
             </div>
-            <div class="project2">
-                <img src="#" alt="Project 2" height="200px" width="200px">
-                <!--position rel-->
-                <h2>Project 2</h2>
-                <!--position absolute-->
+            <div id="connect">
+                <h2>Connect with Me</h2>
+                <div id="icons">
+                    <a href="https://github.com/kanwisher"> <img src="assets/images/githublogo.svg" alt="github" height="55" width="75"></a>
+                    <a href="https://www.linkedin.com/in/david-kanwisher-a90792129"><img src="assets/images/linkedinlogo.svg" alt="Linkedin" height="55" width="75"></a>
+                    <a href="https://twitter.com/_kanwisher"><img src="assets/images/twitterlogo.svg" alt="Twitter" height="55" width="75"></a>
+                </div>
             </div>
-            <div class="project3">
-                <img src="#" alt="Project 3" height="200px" width="200px">
-                <!--position rel-->
-                <h2>Project 3</h2>
-                <!--position absolute-->
-            </div>
-            <div class="project4">
-                <img src="#" alt="Project 4" height="200px" width="200px">
-                <!--position rel-->
-                <h2>Project 4</h2>
-                <!--position absolute-->
-            </div>
-            <div class="project5">
-                <img src="#" alt="Project 5" height="200px" width="200px">
-                <!--position rel-->
-                <h2>Project 5</h2>
-                <!--position absolute-->
-            </div>
-            <div class="project6">
-                <img src="#" alt="Project 6" height="200px" width="200px">
-                <!--position rel-->
-                <h2>Project 6</h2>
-                <!--position absolute-->
-            </div>
-        </div>
-        <div class="connect">
-            <h3>Connect with Me</h3>
-            <hr>
-            <img src="assets/images/githublogo.svg" height="75px" width="75px">
-            <img src="assets/images/linkedinlogo.svg" height="75px" width="75px">
-            <img src="assets/images/twitterlogo.svg" height="75px" width="75px">
+            <div id="push"></div>
         </div>
     </div>
     <footer>
-        &copy; Copyright 2016 David Kanwisher
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">&copy;</a> Copyright 2016 David Kanwisher
     </footer>
 </body>
 
 </html>
-<!--Completed first draft of portfolio.html HTML code in 10 minutes 16 seconds-->
+<!--Completed first draft of index.html HTML code in 24 minutes 5 seconds-->

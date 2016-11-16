@@ -5,29 +5,44 @@
     margin: 0;
 }
 
+html {
+    overflow-y: scroll;
+}
+
 html, body {
     background: url(../images/arches.png);
     font-family: 'Arial', 'Helvetica neue', Helvetica, sans-serif;
     height: 100%;
+    color: #777777;
+
+
 }
 
-h1,h2,h3,h4,h5 {
+#wrapper {
+    min-height: 100%;
+    margin: 0 auto -130px;
+    height: auto !important;
+    height: 100%;
+}
+
+h1,h2 {
     font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
 
 a {
     text-decoration: none;
-    color: red;
 }
 
 
 a:visited {
-    color: blue;
+    color: #777;
 }
 
 a:hover {
     color: orange;
 }
+
+
 
 /****HEADER****/
 
@@ -40,13 +55,14 @@ header {
 }
 
 header h1 {
+    font-size: 2em;
+    font-weight: bold;
     background: #4aaaa5;
     float: left;
     color: white;
-    padding: 31px;
+    padding: 33px;
     margin: 0 30px 0 75px;
     white-space: nowrap; /*prevents my name from stacking when page shrinks*/
-    
     }
 
 
@@ -59,14 +75,17 @@ nav {
 
 nav a {
     border-right: 1px solid #ccc;
-    padding: 15px;
+    padding: 20px;
 }
 
 nav a:last-child { /* Removes last link border*/
     border: none;
 }
 
-
+#active {
+    background: #4aaaa5;
+    color:white;
+}
 
 /****MAIN CONTENT BOX (About and Connect)****/
 
@@ -74,8 +93,7 @@ nav a:last-child { /* Removes last link border*/
 
 #content {
     width: 960px;
-    margin: 75px auto;
-    margin-bottom: 0;
+    margin: 70px 0 30px 75px;
     
 }
 
@@ -89,25 +107,101 @@ nav a:last-child { /* Removes last link border*/
     float: left;
     background: #fff;
     padding: 35px;
+    margin-bottom: 35px;
 }
 
 h2 {
     color: #4aaaa5;
     border-bottom: 2px solid #ccc;
     padding-bottom: 20px;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
-#about img {
-    margin: 10px 20px 10px 0;
+p {
+    line-height: 1.2em;
+    margin-top: 15px;
+
+}
+
+
+#mypic {
+    margin: 10px 40px 10px 0;
     box-shadow: 10px 10px 5px #888;
     float: left;
 }
 
-p {
-    padding: 15px;
-    line-height: 1.2em;
-    font-size: 1.2em;
+.projectpic {
+    margin: 10px;
+    position: relative;
+    display: inline-block;
+    opacity: 1;
 }
+
+.projectpic:hover {
+    opacity: .5;
+}
+
+#icons a:hover {
+    opacity: .5;
+}
+
+h3 {
+    font-size: 1.3em;
+    position: absolute;
+    bottom: 15px;
+    background: #4aaaa5;
+    color: white;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+}
+
+
+/****FORM STYLE*****/
+
+input {
+    width: 100%;
+    margin: 10px 0 10px 0;
+    border-color: solid #ccc;
+
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    height: 200px;
+    margin-top: 10px;
+
+}
+
+input[value]{
+    font-family:'Arial', 'Helvetica neue', Helvetica, sans-serif;
+    color: #ccc;
+    padding: 10px;
+}
+
+input[type=submit]{
+    width: 100px;
+    border: none;
+    color: white;
+    background: #4aaaa5;
+    padding: 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+    
+}
+
+input[type=submit]:hover {
+    background: orange;
+}
+
+
+
+
+
+
 
 
 /*****CONNECT SECTION****/
@@ -124,13 +218,13 @@ p {
 
 #connect h2 {
     text-align: center;
-    top-margin: 25px;
+    margin-top: 25px;
 }
 
 #icons {
     padding: 15px 5px 5px 5px;
-}
 
+}
 
 
 /*****FOOTER*****/
@@ -138,17 +232,16 @@ p {
 
 #push {
     height: 100px;
-    clear: both;
+    
 }
 
 footer {
 	background: #666;
 	text-align: center;
 	border-top: 6px solid #4aaaa5;
-	width: 100%;
 	height: 100px;
-	clear: both;
 	color: #fff;
 	padding-top: 35px;
-
+    clear: both;
 }
+

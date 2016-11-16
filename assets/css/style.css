@@ -1,101 +1,94 @@
+/****MAIN BODY****/
+
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 html, body {
     background: url(../images/arches.png);
     font-family: 'Arial', 'Helvetica neue', Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
     height: 100%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1,h2,h3,h4,h5 {
     font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
 
-#wrapper {
-	min-height:100%;
-	position: relative;
+a {
+    text-decoration: none;
+    color: red;
 }
+
+
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    color: orange;
+}
+
+/****HEADER****/
 
 header {
     background: #fff;
     margin: 0px;
     border-bottom: 2px solid #ccc;
     height: 100px;
-    overflow: hidden;
+    overflow: auto; /* prevents content from leaving header space */
 }
 
 header h1 {
     background: #4aaaa5;
     float: left;
     color: white;
-    padding: 35px;
+    padding: 31px;
     margin: 0 30px 0 75px;
-    white-space: nowrap;
-}
+    white-space: nowrap; /*prevents my name from stacking when page shrinks*/
+    
+    }
+
 
 nav {
     float: right;
     padding-top: 40px;
     margin-right: 60px;
-    margin-left: 10%;
 }
 
-.container {
-    width: 960px;
-    overflow: hidden;
-    margin: 30px 75px 0px 75px;
-    padding-bottom: 100px;
-}
-
-.about {
-    width: 650px;
-    border: 1px solid #ccc;
-}
-
-.connect {
-    width: 270px;
-    border: 1px solid #ccc;
-}
-
-
-a {
-    text-decoration: none;
-}
 
 nav a {
     border-right: 1px solid #ccc;
     padding: 15px;
 }
 
-nav a:last-child {
+nav a:last-child { /* Removes last link border*/
     border: none;
 }
 
 
 
-.about {
+/****MAIN CONTENT BOX (About and Connect)****/
+
+
+
+#content {
+    width: 960px;
+    margin: 75px auto;
+    margin-bottom: 0;
+    
+}
+
+
+/***ABOUT SECTION****/
+
+
+#about {
+    width: 650px;
+    border: 1px solid #ccc;
     float: left;
     background: #fff;
-    margin-bottom: 35px;
     padding: 35px;
-}
-
-.connect {
-    float: left;
-    margin-left: 15px;
-    background: #fff;
-    padding: 10px;
-}
-
-.icons {
-    padding: 5px;
 }
 
 h2 {
@@ -104,19 +97,54 @@ h2 {
     padding-bottom: 20px;
 }
 
-h3 {
+#about img {
+    margin: 10px 20px 10px 0;
+    box-shadow: 10px 10px 5px #888;
+    float: left;
+}
+
+p {
+    padding: 15px;
+    line-height: 1.2em;
+    font-size: 1.2em;
+}
+
+
+/*****CONNECT SECTION****/
+
+
+#connect {
+    float: right;
+    background: #fff;
+    padding: 10px;
+    width: 270px;
+    border: 1px solid #ccc;
+}
+
+
+#connect h2 {
     text-align: center;
-    color: #4aaaa5;
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 20px;
+    top-margin: 25px;
+}
+
+#icons {
+    padding: 15px 5px 5px 5px;
+}
+
+
+
+/*****FOOTER*****/
+
+
+#push {
+    height: 100px;
+    clear: both;
 }
 
 footer {
 	background: #666;
 	text-align: center;
 	border-top: 6px solid #4aaaa5;
-	position: absolute;
-	bottom: 0;
 	width: 100%;
 	height: 100px;
 	clear: both;

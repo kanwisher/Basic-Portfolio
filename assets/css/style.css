@@ -1,4 +1,16 @@
+
+
+
+
+
+
 /****MAIN BODY****/
+
+
+
+
+
+
 
 * {
     box-sizing: border-box;
@@ -21,7 +33,7 @@ html, body {
 #wrapper {
     min-height: 100%;
     margin: 0 auto -130px;
-    height: auto !important;
+    height: auto;
     height: 100%;
 }
 
@@ -45,7 +57,20 @@ a:hover {
 
 
 
+
+
+
+
+
 /****HEADER****/
+
+
+
+
+
+
+
+
 
 header {
     background: #fff;
@@ -53,7 +78,7 @@ header {
     border-bottom: 2px solid #ccc;
     height: 100px;
     overflow: auto; /* prevents content from leaving header space */
-    min-width: 960px;
+    min-width: 960px; /* prevents nav and heading from collapsing into each other */
 }
 
 header h1 {
@@ -64,7 +89,7 @@ header h1 {
     color: white;
     padding: 33px;
     margin: 0 30px 0 75px;
-    white-space: nowrap; /*prevents my name from stacking when page shrinks*/
+    white-space: nowrap; /*prevents mheading from stacking when page shrinks*/
     }
 
 
@@ -76,7 +101,7 @@ nav {
 
 
 nav a {
-    border-right: 1px solid #ccc;
+    border-right: 1px solid #ccc; /* divider for nav elements */
     padding: 20px;
 }
 
@@ -85,11 +110,22 @@ nav a:last-child { /* Removes last link border*/
 }
 
 #active {
-    background: #4aaaa5;
+    background: #4aaaa5; /* highlights Nav link for current page */
     color:white;
 }
 
-/****MAIN CONTENT BOX (About and Connect)****/
+
+
+
+
+
+
+/****MAIN CONTENT BOX (About and Connect combined)****/
+
+
+
+
+
 
 
 
@@ -100,7 +136,20 @@ nav a:last-child { /* Removes last link border*/
 }
 
 
+
+
+
+
+
+
 /***ABOUT SECTION****/
+
+
+
+
+
+
+
 
 
 #about {
@@ -161,7 +210,20 @@ h3 {
 }
 
 
+
+
+
+
+
+
 /****FORM STYLE*****/
+
+
+
+
+
+
+
 
 input {
     width: 100%;
@@ -209,6 +271,12 @@ input[type=submit]:hover {
 /*****CONNECT SECTION****/
 
 
+
+
+
+
+
+
 #connect {
     float: right;
     background: #fff;
@@ -229,7 +297,18 @@ input[type=submit]:hover {
 }
 
 
+
+
+
+
+
 /*****FOOTER*****/
+
+
+
+
+
+
 
 
 #push {
